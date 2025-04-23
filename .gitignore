@@ -44,4 +44,3 @@ next-env.d.ts
 
 # This is for npm, not yarn
 package-lock.json
-
