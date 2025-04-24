@@ -1,5 +1,6 @@
 'use client';
 
+import {cn} from '@/lib/utils';
 import {useState} from 'react';
 
 interface Props {
@@ -19,8 +20,7 @@ export default function EditableField({value, onChangeAction, className}: Props)
 
     return editing ? (
         <input
-            className={`border rounded px-1 ${className}`}
-            value={draft}
+            className={cn("border rounded px-1", className)} value={draft}
             onChange={(e) => setDraft(e.target.value)}
             onBlur={handleBlur}
             autoFocus

@@ -17,14 +17,13 @@ export default function FolderComponent({ folder, onChangeAction }: Props) {
     }
 
     function handleAddBookmark() {
-        const newBookmark : TreeNode = {
+        const newBookmark: TreeNode = {
             id: uuidv4(),
-            type: 'bookmark',
+            type: 'bookmark' as const,
             name: 'New Bookmark',
-            url: 'https://example.com'
+            url: 'https://example.com',
         };
-        folder.contents.push(newBookmark);
-        onChangeAction(folder);
+        onChangeAction({ ...folder, contents: [...folder.contents, newBookmark] });
     }
 
     return (

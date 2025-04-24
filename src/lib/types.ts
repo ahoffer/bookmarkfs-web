@@ -9,7 +9,7 @@ export interface Folder {
     id: string;
     type: 'folder';
     name: string;
-    contents: TreeNode[];
+    contents?: TreeNode[];
 }
 
 export type TreeNode = Bookmark | Folder;
