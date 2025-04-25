@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="All" type="CompoundRunConfigurationType">
+    <toRun name="Chrome debug conn" type="JavascriptDebugType" />
+    <toRun name="Runner (start server like yarn dev, but no turbopack)" type="NodeJSConfigurationType" />
+    <toRun name="bookmarkfs" type="ShConfigurationType" />
+    <method v="2" />
+  </configuration>
+</component>

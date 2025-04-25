@@ -1,7 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Compound (run &amp; debug)" type="CompoundRunConfigurationType">
-    <toRun name="Attach to Node.js/Chrome" type="ChromiumRemoteDebugType" />
-    <toRun name="Chrome debug conn" type="JavascriptDebugType" />
-    <method v="2" />
-  </configuration>
-</component>
